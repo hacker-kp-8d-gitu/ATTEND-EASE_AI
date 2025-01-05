@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attend Ease AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Background Video -->
+    <header>
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="bg-header.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <h1>Attend Ease AI</h1>
+            <p>Revolutionizing Classroom Attendance Management</p>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <button class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#problem">Problem Statement</a>
+                <a href="#solution">Solution</a>
+                <a href="#features">Features</a>
+                <a href="#model">How It's Made</a>
+                <a href="#business">Business Model</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <section id="problem" class="section">
+        <div class="container">
+            <h2><i class="fas fa-exclamation-circle"></i> Problem Statement</h2>
+            <ul>
+                <li>Traditional attendance methods take 5-10 minutes, reducing valuable teaching time.</li>
+                <li>Biometric and face recognition systems handle only one student at a time, causing delays in large classrooms.</li>
+                <li>Attendance systems lack seamless integration with ERPs, adding manual effort and time.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="solution" class="section">
+        <div class="container">
+            <h2><i class="fas fa-lightbulb"></i> Innovative Solution</h2>
+            <p>Attend Ease AI is an advanced attendance management system powered by TensorFlow and Computer Vision. It captures and recognizes the faces of 40-50 students simultaneously, recording attendance in just 7-8 seconds. The system exports attendance data to a .csv file for easy ERP integration.</p>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2><i class="fas fa-star"></i> Key Features and Benefits</h2>
+            <ul>
+                <li>Speed and Efficiency: Attendance is completed in under 10 seconds.</li>
+                <li>Scalability: Handles up to 50 students simultaneously.</li>
+                <li>Local Host Availability: Ensures enhanced data privacy and security.</li>
+                <li>Easy Integration: Seamless upload and management in ERPs.</li>
+                <li>Period-Wise Convenience: Ideal for frequent attendance needs.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="model" class="section">
+        <div class="container">
+            <h2><i class="fas fa-cogs"></i> How the Model is Made</h2>
+            <ol>
+                <li><b>Development Framework:</b> Built using Python, TensorFlow, and OpenCV.</li>
+                <li><b>Web Integration:</b> Uses HTML and Flask for a user-friendly interface.</li>
+                <li><b>Data Export:</b> Automatically generates .csv files for ERP upload.</li>
+                <li><b>Testing and Optimization:</b> Ensures accuracy and speed for crowded classrooms.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="business" class="section">
+        <div class="container">
+            <h2><i class="fas fa-briefcase"></i> Business Model</h2>
+            <ul>
+                <li><b>Target Audience:</b> Educational institutions and higher education institutions.</li>
+                <li><b>Revenue Streams:</b>
+                    <ul>
+                        <li>Licensing the software to institutions.</li>
+                        <li>Customization services for specific needs.</li>
+                        <li>Annual maintenance and support services.</li>
+                    </ul>
+                </li>
+                <li><b>B2B Services:</b>
+                    <ul>
+                        <li>Tailored solutions for ERP integration.</li>
+                        <li>Bulk licensing options for multi-campus institutions.</li>
+                        <li>On-site setup, training, and support.</li>
+                    </ul>
+                </li>
+                <li><b>B2C Services:</b>
+                    <ul>
+                        <li>Subscription-based models for educators and small coaching centers.</li>
+                        <li>Downloadable secure local installation.</li>
+                        <li>User-friendly customization options.</li>
+                    </ul>
+                </li>
+                <li><b>Scalability:</b> Adaptable for corporate attendance and event management.</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Attend Ease AI. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
